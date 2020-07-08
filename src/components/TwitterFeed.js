@@ -4,14 +4,16 @@ import { TwitterTimelineEmbed, TwitterFollowButton} from 'react-twitter-embed';
 
 export const TwitterFeed = () => {
     return (
-        <div style={{width: 400, height:400, margin: 20}}>
+        <div className='twitter-feed'>
             <h2> Twitter Feed: </h2>
+            <div className='timeline'>
             <TwitterTimelineEmbed
                 sourceType="widget"
                 screenName="kmarks2013"
                 options={{height: 400}}
                 noHeader
             />
+            </div>
             <TwitterFollowButton screenName="kmarks2013"/>
         </div>
     )
