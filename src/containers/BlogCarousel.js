@@ -50,13 +50,27 @@ export const BlogCarousel = () => {
 
     useEffect(() => {
         apiFetch()
-    })
+    }, [])
 
-
+    console.log(mediumPosts)
 
     return (
-        <div>
-            
+        <div className='slider'>
+        <div className='slider-items'>
+          <LeftArrow
+            goToPrevSlide={goToPrevSlide}
+          />
+        <div className='slider-text'>
+          <BlogCard
+            active={active}
+            mediumPosts={mediumPosts}
+            // data={DATA}
+          />
         </div>
+          <RightArrow
+            goToNextSlide={goToNextSlide}
+          />
+        </div>
+      </div>
     )
 }
