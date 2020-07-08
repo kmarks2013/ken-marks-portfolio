@@ -1,27 +1,41 @@
 import React, {useState, useEffect}  from 'react'
-import BlogCard from './BlogCard'
+import BlogCard from '../components/BlogCard'
+import LeftArrow from '../components/LeftArrow'
+import RightArrow from '../components/RightArrow'
+import data from '../data'
 
-export const Blogs = () => {
-    const [requestFailed, setRequestFailed] = useState(false)
+export const BlogCarousel = () => {
     const [active, setActive] = useState(0)
+    const [dataLength, setDataLength] = useState(data.length)
     const [mediumPosts, setMediumPosts] = useState([])
 
-    const data = [{    
-        title: 'Turn the music up!',
-        description: '',
-        },
-        {
-        title: 'Choose your music',
-        description: 'The world is full of music; why should you have to listen to music someone else chose?',
-        },
-        {
-        title: 'Unlimited, streaming, ad-free',
-        description: 'No arbitrary limits. No distractions.',
-        },
-        {
-        title: 'Mobile enabled',
-        description: 'Listen to your music on the go. This streaming service is available on all mobile platforms.',
-    }]
+    // console.log(dataLength)
+    const goToPrevSlide = () => {
+        let index = active
+        let length = dataLength
+
+        if (index < 1){
+            index = length - 1
+        } else {
+            index--
+        }
+        setActive(index)
+        console.log(active)
+    }
+
+    const goToNextSlide = () => {
+        let index = active
+        let length = dataLength
+
+        if (index === length - 1){
+            index = 0
+        } else {
+            index++
+        }
+
+        setActive(index)
+        console.log(active)
+    }
 
     const apiFetch = () => {
         fetch("https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40kmarks2013")
