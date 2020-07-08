@@ -33,3 +33,10 @@ a {
   border-color: green;
   border-style: solid;
 }
+
+.inactive {
+  display: none;
+}
+.active {
+  display: block;
+}
