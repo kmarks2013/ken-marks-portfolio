@@ -11,6 +11,8 @@ export const TwitterFeed = () => {
                 sourceType="widget"
                 screenName="kmarks2013"
                 options={{height: 400}}
+                theme="dark"
+                noScrollbar
                 noHeader
             />
             </div>
