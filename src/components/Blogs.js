@@ -2,8 +2,6 @@ import React, {useState, useEffect}  from 'react'
 import BlogCard from './BlogCard'
 
 export const Blogs = () => {
-    const [requestFailed, setRequestFailed] = useState(false)
-    const [active, setActive] = useState(0)
     const [mediumPosts, setMediumPosts] = useState([])
 
     const apiFetch = () => {
