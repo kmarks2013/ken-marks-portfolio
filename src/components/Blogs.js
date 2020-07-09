@@ -24,8 +24,9 @@ export const Blogs = () => {
 
     useEffect(() => {
         apiFetch()
-    })
+    }, [])
 
+    console.log(mediumPosts)
 
 
     return (
