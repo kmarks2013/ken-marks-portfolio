@@ -4,7 +4,7 @@ import Iframe from 'react-iframe'
 export const Portfolio = () => {
     return (
         <div className='portfolio'>
-            <h3>Portfolio</h3>
+            <h1 className='section-head'>Portfolio</h1>
         </div>
     )
 }
