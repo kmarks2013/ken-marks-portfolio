@@ -157,3 +157,11 @@
 .inactive {
   display: none;
 }
+
+.active {
+  display: block;
+  width: 100vh;
+  border-width: 1px;
+  border-style: solid;
+  border-color: tomato
+}
