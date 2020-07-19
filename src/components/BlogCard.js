@@ -3,7 +3,7 @@ import {BlogImage} from './blogcard/BlogImage'
 const moment = require('moment')
 
 export default function BlogCard({blog}) {
-    console.log(blog)
+    // console.log(blog)
 
     return (
         <section className='blog-card' >
