@@ -67,7 +67,7 @@
   border-style: groove;
   border-width: 1px;
   border-color:indigo ;
-  height: fit-content;
+  height: 100vh;
   padding: 10px;
   padding-bottom: 30px;
 }
