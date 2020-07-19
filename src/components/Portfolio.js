@@ -41,9 +41,11 @@ const PROJECTS = [
 ]
 
 export const Portfolio = () => {
+    const [current, setCurrent] = useState(0)
+    console.log(PROJECTS)
     return (
         <div className='portfolio'>
-            <h1 className='section-head'>Portfolio</h1>
+            <Carousel data={PROJECTS}/>
         </div>
     )
 }
