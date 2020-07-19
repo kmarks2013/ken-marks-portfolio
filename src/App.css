@@ -34,6 +34,16 @@
   width: 100%;
 }
 
+.carousel{
+  display: flex;
+  /* width: 100%; */
+  justify-content: space-between;
+  border-style: solid;
+  border-width: 1px;
+  border-color: blue;
+  height: 100%
+}
+
 .weblinks{
   /* margin-top: 50px; */
   border-width: 1px;
