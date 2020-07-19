@@ -53,6 +53,7 @@
   border-color: green;
   border-style: solid;
   height: auto;
+  /* height: 100vh */
 }
 
 .inactive {
