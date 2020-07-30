@@ -4,7 +4,6 @@ const ProjectSlide = ({data, index}) => {
     console.log(data.length)
     return (
         <div className='project-content'>
-            <h1 className='section-head'>Portfolio</h1>
             {
                 data.map((project, projectIndex) => 
                     <div 
