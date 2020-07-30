@@ -4,7 +4,7 @@ import { TwitterTimelineEmbed, TwitterFollowButton} from 'react-twitter-embed';
 
 export const TwitterFeed = () => {
     return (
-        <div className='twitter-feed'>
+        <div id="twitter" className='twitter-feed'>
             <h1 className='section-head'> Twitter Feed: </h1>
             <div className='timeline'>
             <TwitterTimelineEmbed

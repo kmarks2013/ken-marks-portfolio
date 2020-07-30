@@ -9,7 +9,7 @@ export const Blogs = ({blogList}) => {
         )
 
     return (
-        <div className='bloglist'>
+        <div id="technical-writings" className='bloglist'>
             {renderBlogs}
         </div>
     )

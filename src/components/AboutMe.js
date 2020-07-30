@@ -4,7 +4,7 @@ import Flippy, { FrontSide, BackSide } from 'react-flippy';
 
 export const AboutMe = () => {
     return (
-        <div className='about-me'>
+        <div className='about-me' id='about'>
             <Flippy flipOnClick={true}
                 flipDirection="horizontal"
             >
