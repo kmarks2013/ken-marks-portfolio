@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { MainContainer } from './containers/MainContainer';
 import { Route, Switch } from 'react-router-dom'
-import  AboutMe from './components/AboutMe';
+import  { AboutMe } from './components/AboutMe';
 import { Portfolio } from './containers/Portfolio';
 import { Blogs } from './components/Blogs';
 import { TwitterFeed } from './components/TwitterFeed';
