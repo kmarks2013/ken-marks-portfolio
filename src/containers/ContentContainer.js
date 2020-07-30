@@ -9,8 +9,10 @@ function ContentContainer() {
     return (
         <div>
             <AboutMe/>
+            <Portfolio/>
             <BlogContainer/>
-
+            <TwitterFeed/>
+            <Weblinks />
         </div>
     )
 }
